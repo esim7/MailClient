@@ -39,7 +39,6 @@ namespace MailClient
 
             IMail email = builder.Create();
 
-            // Send the message
             using (Smtp smtp = new Smtp())
             {
                 smtp.ConnectSSL("smtp.gmail.com");    

@@ -38,7 +38,7 @@ namespace MailClient
             builder.Text = messageText_textBox.Text;
 
             IMail email = builder.Create();
-
+            // отправка сообщения
             using (Smtp smtp = new Smtp())
             {
                 smtp.ConnectSSL("smtp.gmail.com");    
